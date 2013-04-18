@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc  $/;"	m
+CFLAGS	Makefile	/^CFLAGS = `pkg-config --cflags gtk+-3.0` -Wall -ggdb3 $/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(CPPFLAGS) $(CFLAGS) -c  $/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS =  $/;"	m
+DEPS	Makefile	/^DEPS := $(patsubst %.c,%.d,$(SRCS))  $/;"	m
+INTERFACE_H	interface.h	2;"	d
+LDFLAGS	Makefile	/^LDFLAGS = `pkg-config --libs gtk+-3.0` -WL,--export-dynamic  $/;"	m
+LIBA	Makefile	/^LIBA = $/;"	m
+LINKCC	Makefile	/^LINKCC = $(CC)$/;"	m
+MAX_LEN	wether.c	24;"	d	file:
+OBJS	Makefile	/^OBJS := $(patsubst %.c,%.o,$(SRCS))  $/;"	m
+PRGM	Makefile	/^PRGM = main $/;"	m
+SRCS	Makefile	/^SRCS := $(wildcard *.c)  $/;"	m
+WETHER_H	wether.h	22;"	d
+bool	wether.h	/^typedef enum bool{false=0,true=!false} bool;$/;"	g
+bool	wether.h	/^typedef enum bool{false=0,true=!false} bool;$/;"	t	typeref:enum:bool
+builder	interface.h	/^GtkBuilder *builder;$/;"	v
+city_label	callbacks.h	/^GtkWidget *city_label;$/;"	v
+city_label	interface.h	/^GtkWidget *city_label;$/;"	v
+close_label	callbacks.h	/^GtkWidget *close_label;$/;"	v
+close_label	interface.h	/^GtkWidget *close_label;$/;"	v
+create_main_window	interface.h	/^GtkWidget *create_main_window(){$/;"	f	signature:()
+event_box	interface.h	/^GtkWidget *event_box;$/;"	v
+false	wether.h	/^typedef enum bool{false=0,true=!false} bool;$/;"	e	enum:bool
+getWebtoXmlFile	wether.c	/^bool getWebtoXmlFile(char *url){$/;"	f	signature:(char *url)
+getWebtoXmlFile	wether.h	/^bool getWebtoXmlFile(char *url);$/;"	p	signature:(char *url)
+humidity_label	interface.h	/^GtkWidget *humidity_label;$/;"	v
+init_main_window	interface.h	/^void init_main_window(){$/;"	f	signature:()
+init_title_bar	interface.h	/^void init_title_bar(){$/;"	f	signature:()
+main	main.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main_wether_image	callbacks.h	/^GtkWidget *main_wether_image;/;"	v
+main_wether_image	interface.h	/^GtkWidget *main_wether_image;$/;"	v
+min_label	interface.h	/^GtkWidget *min_label;$/;"	v
+paraseXmlWetherInfo	wether.c	/^void paraseXmlWetherInfo(char info[][255],int *type){$/;"	f	signature:(char info[][255],int *type)
+paraseXmlWetherInfo	wether.h	/^void paraseXmlWetherInfo(char info[][255],int *type);$/;"	p	signature:(char info[][255],int *type)
+readfromfile	wether.c	/^void readfromfile(char *path,char *s){$/;"	f	signature:(char *path,char *s)
+readfromfile	wether.h	/^void readfromfile(char *path,char *s);$/;"	p	signature:(char *path,char *s)
+sumary_label	interface.h	/^GtkWidget *sumary_label;$/;"	v
+temperature_label	interface.h	/^GtkWidget *temperature_label;$/;"	v
+time_label	interface.h	/^GtkWidget *time_label;$/;"	v
+true	wether.h	/^typedef enum bool{false=0,true=!false} bool;$/;"	e	enum:bool
+window	interface.h	/^static GtkWidget *window;$/;"	v
+window_button_press_event	interface.h	/^gint window_button_press_event(GtkWidget * widget,$/;"	f	signature:(GtkWidget * widget, GdkEventButton * event, gpointer data)
+writetofile	wether.c	/^void writetofile(char *path,char *s,char *mode){$/;"	f	signature:(char *path,char *s,char *mode)
+writetofile	wether.h	/^void writetofile(char *path,char *s,char *mode);$/;"	p	signature:(char *path,char *s,char *mode)
